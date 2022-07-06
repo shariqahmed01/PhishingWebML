@@ -44,5 +44,4 @@ def make_predict():
     return jsonify(result)
 
 if __name__ == "__main__":
-    # context = ('local.crt', 'local.key')
-    app.run(debug=True,host='192.168.29.128',port=8080, ssl_context='adhoc')
+    app.run(debug=False,host='0.0.0.0')
